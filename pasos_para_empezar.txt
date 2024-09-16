@@ -1,0 +1,41 @@
+Pasos trabajar con github:
+
+1. Llevarte esta carpeta a tu escritorio, abre terminal y haz esto:
+$cd Escritorio/ 
+Luego en github en este proyecto cuando pulsas la carpeta VC (este proyecto) pulsas en el botón verde q pone "<> Code" y donde sale el enlace del proyecto lo copias.
+Lo pegas en el terminal usando este comando:
+$git clone (enlace copiado)
+Y ya lo tienes. Ponte en tu rama nrg:
+$git checkout nrh
+
+2. Descargar Anaconda desde la web.
+
+3. Ejecutar en terminal:
+conda create --name VC_P1 python=3.11.5 
+conda activate VC_P1
+Si no te funciona o no te reconoce el comando conda a mi en mac me funcionó esto:
+$source ~/.zshrc
+
+4. Instalar paquetes python:
+$pip install opencv-python
+$pip install matplotlib
+
+5. Abre Visual Code:
+En abrir carpeta abres la carpeta que bajaste en tu escritorio VC.
+En extensiones si no tienes instalado python lo instalas.
+En kernel seleccionar el environment VC_P1. Y ya listo pa trabajar las prácticas.
+
+6. Para actualizar lo que has hecho, en github:
+Comprueba que cuando ves la rama actual sale en verde la tuya nrg con esto:
+$git branch
+Con $git status ves los cambios que hay que actualizar en color rojo.
+Para actualizarlos usa add, con los archivos que quieras actualizar, ya te salen en rojo con su ruta:
+$git add /archivos_que_quieras_actualizar
+Comprueba de nuevo con $git status que se actualizan los archivos saliendo en verde.
+Ahora haz un commit de esos archivos y llámalos como quieras:
+$git commit -m "Tarea 2 actualizada"
+Si tienes más archivos en rojo actualizalos y hazles su correspondiente commit.
+Cuando ya esté todo commiteado (comprueba con $git status que no salen archivos ni rojos ni verdes), puedes subirlo a github asi:
+$git push origin nrg
+
+
