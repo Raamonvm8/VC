@@ -38,4 +38,4 @@ Si tienes más archivos en rojo actualizalos y hazles su correspondiente commit.
 Cuando ya esté todo commiteado (comprueba con $git status que no salen archivos ni rojos ni verdes), puedes subirlo a github asi:
 $git push origin nrg
 
-
+Así tu trabajas en tu rama unas tareas y yo en la mía otras tareas y luego las juntamos en la rama main.
