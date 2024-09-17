@@ -7,6 +7,7 @@ Lo pegas en el terminal usando este comando:
 $git clone (enlace copiado)
 Y ya lo tienes. Ponte en tu rama nrg:
 $git checkout nrh
+$git pull origin main
 
 2. Descargar Anaconda desde la web.
 
