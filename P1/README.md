@@ -9,7 +9,8 @@ Se ha creado una imagen de 350 x 350, donde se han pintado los rectangulos de fo
 
 3. Creación de una Imagen al Estilo trablero de ajedrez usando OpenCV:
 
-
+Lo que hemos hecho en esta tarea ha sido primero definir las dimensiones con una imagen vacía de tamaño 400x400 píxeles con un único plano de color, establecer el tamaño de las celdas, con un tamaño de 50x50 píxeles. El bucle para dibujar el tablero. Y por último dibujar las celdas usando OpenCV, para cada celda, usamos la función cv2.rectangle, que dibuja un rectángulo desde la esquina superior izquierda hasta la esquina inferior derecha con el color adecuado.
+Y mostramos la imagen utilizando matplotlib, para ver la imagen resultante.
 
 4. Modificación de los Valores de un Plano de la Imagen:
 
@@ -23,7 +24,10 @@ Creamos los circulos con cv2.circle() y por último mostramos la imagen marcando
 6. Propuesta de Pop-Art:
 
 
+En la Tarea 6, utilizamos la cámara web para capturar video y aplicar diferentes efectos visuales en tiempo real, creando un collage estilo pop art. Dividimos el collage en cuatro secciones, cada una con un efecto distinto: una en escala de grises, otra con los colores invertidos, una con colores saturados, y la última con un filtro sepia. Los fotogramas de la cámara se procesan en tiempo real y se muestran en el collage. Para salir, presionamos ESC.
+
 
 Referencias:
 
-https://chat.openai.com
+https://github.com/otsedom/otsedom.github.io/tree/main/VC
+https://aep25.ulpgc.es/pluginfile.php/169758/mod_resource/content/8/VC_Tema%201_2425.pdf
