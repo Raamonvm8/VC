@@ -1,6 +1,12 @@
+Nombres:
+Ramón Valls Martin y 
+Noah Ramos González
+
+TAREAS:
+
 1. Creación de una Imagen con Textura de Tablero de Ajedrez:
 
-Primero de todo usamos un tablero de 350x350 y los cuadrados son de 50x50 píxeles. 
+Primero de todo usamos un tablero de 400x400 (originalmente era de 350x350 pero lo modificamos para que aparecieran el número de casillas exacto de un tablero de ajedrez) y los cuadrados son de 50x50 píxeles. 
 Para pintarlos usamos un bucle for i-j que parte desde 0 hasta el ancho y alto recorriendo todo el tablero, poniendo como medio la medida de la casilla (50px). De esta forma, si la fila/celda + columna/celda es impar, pinta esa celda de negro, si es par de blanco, y así conseguimos terminar el tablero de ajedrez.
 
 2. Creación de una Imagen al Estilo Mondrian:
@@ -31,3 +37,4 @@ Referencias:
 
 https://github.com/otsedom/otsedom.github.io/tree/main/VC
 https://aep25.ulpgc.es/pluginfile.php/169758/mod_resource/content/8/VC_Tema%201_2425.pdf
+https://programacionpython80889555.wordpress.com/2023/01/05/trabajando-con-canales-de-color-en-imagenes-digitales-con-python-y-opencv/
