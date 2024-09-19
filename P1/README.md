@@ -6,7 +6,7 @@ TAREAS:
 
 1. Creación de una Imagen con Textura de Tablero de Ajedrez:
 
-Primero de todo usamos un tablero de 350x350 y los cuadrados son de 50x50 píxeles. 
+Primero de todo usamos un tablero de 400x400 (originalmente era de 350x350 pero lo modificamos para que aparecieran el número de casillas exacto de un tablero de ajedrez) y los cuadrados son de 50x50 píxeles. 
 Para pintarlos usamos un bucle for i-j que parte desde 0 hasta el ancho y alto recorriendo todo el tablero, poniendo como medio la medida de la casilla (50px). De esta forma, si la fila/celda + columna/celda es impar, pinta esa celda de negro, si es par de blanco, y así conseguimos terminar el tablero de ajedrez.
 
 2. Creación de una Imagen al Estilo Mondrian:
