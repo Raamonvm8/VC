@@ -1,3 +1,9 @@
+Nombres:
+Ramón Valls Martin
+Noah Ramos González
+
+TAREAS:
+
 1. Creación de una Imagen con Textura de Tablero de Ajedrez:
 
 Primero de todo usamos un tablero de 350x350 y los cuadrados son de 50x50 píxeles. 
