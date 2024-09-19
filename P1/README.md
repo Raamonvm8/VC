@@ -37,3 +37,4 @@ Referencias:
 
 https://github.com/otsedom/otsedom.github.io/tree/main/VC
 https://aep25.ulpgc.es/pluginfile.php/169758/mod_resource/content/8/VC_Tema%201_2425.pdf
+https://programacionpython80889555.wordpress.com/2023/01/05/trabajando-con-canales-de-color-en-imagenes-digitales-con-python-y-opencv/
