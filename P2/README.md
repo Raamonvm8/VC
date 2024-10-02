@@ -1,29 +1,34 @@
 ## Práctica 2. Funciones básicas de OpenCV
 
-### Contenidos
+### Tarea 1
 
-[Aspectos cubiertos](#21-aspectos-cubiertos)  
-[Entrega](#22-entrega)  
+### Tarea 2
 
-### 2.1. Aspectos cubiertos
+### Tarea 3
+Objetivo
+El objetivo de esta tarea fue crear un demostrador que capture imágenes en tiempo real desde la cámara y aplique técnicas de procesamiento de imágenes con OpenCV. Además de mostrar la imagen original, el demostrador debía incluir al menos dos ejemplos prácticos de lo aprendido en las prácticas.
 
-La práctica precedente abordaba el modo de acceder al valor asociado a un píxel, así como su modificación. Dicha capacidad abre muchísimas posibilidades, existiendo un nutrido grupo de operaciones básicas, estando habitualmente presentes en bibliotecas como la que utilizaremos a lo largo del curso: [OpenCV](https://opencv.org).
+Desarrollo
+Se utilizaron las siguientes técnicas:
 
-El cuaderno proporcionado para esta práctica (*VC_P2.ipynb*), recuerda en primer término la conversión de formato del espacio de color, tanto la conversión a grises, como a otros espacios de representación, que facilitan determinadas operaciones. Tras repasar el manejo de dichas utilidades, el cuaderno cubre un conjunto de funciones básicas de procesamiento de imágenes disponibles en OpenCV, como son las utilidades ya mencionadas de conversión de espacio de color, añadiendo las de cálculo de bordes o contornos, umbralizado, histogramas, diferencias de fotogramas o sustracción de fondo, etc.
+Filtro Sobel: El operador Sobel se aplicó para detectar bordes en las direcciones horizontal y vertical, combinando ambos resultados para mostrar los bordes presentes en la imagen.
 
-### 2.2. Entrega
+Filtro Canny: Se utilizó el algoritmo de Canny para detectar bordes de manera más precisa y detallada, siguiendo un proceso de suavizado, derivación y umbralización.
 
-A lo largo del cuaderno se propone resolver algunas variaciones sobre el código proporcionado. Además de dichas tareas concretas, en la parte final se proponen dos tareas con un objetivo más abierto otorgando mayor libertad en cuanto al resultado a producir:
+Conteo de píxeles blancos por filas y columnas: En la imagen resultante del filtro Canny, se contó el número de píxeles blancos por filas y columnas. Se destacó visualmente las filas y columnas con una cantidad de píxeles mayor o igual al 95% del máximo.
 
-- Desarrollar un demostrador que capture las imágenes de la cámara, y les permita *exhibir* lo aprendido en estas dos primeras prácticas ante quienes no cursen la asignatura de Visión por Computador :) . Es por ello que además de poder mostrar la imagen original de la webcam, sea posible de forma interactiva cambiar de modo, incluyendo al menos dos modos diferentes que muestren el resultado de aplicar funciones de OpenCV trabajadas hasta ahora.
+Conclusiones
+El demostrador mostró claramente la diferencia entre los filtros Sobel y Canny. Mientras Sobel detecta bordes más suaves en direcciones específicas, Canny es más preciso en la detección de contornos definidos. El análisis de píxeles blancos permitió identificar y resaltar las regiones con mayor cantidad de bordes en la imagen, facilitando la detección de áreas importantes.
 
-- Por otro lado, plantear una reinterpretación de la parte de procesamiento de la imagen tomando como posible punto de partida alguna de las siguientes instalaciones:
+![image](https://github.com/user-attachments/assets/912243d6-6052-4bad-86e9-927e11c77870)
 
-  - [My little piece of privacy](https://www.niklasroy.com/project/88/my-little-piece-of-privacy), por Niklas Roy   
-  - [Messa di voce](https://youtu.be/GfoqiyB1ndE?feature=shared), por Golan Levin y Zachary Lieberman
-  - [Virtual air guitar](https://youtu.be/FIAmyoEpV5c?feature=shared)
+![image](https://github.com/user-attachments/assets/39b39573-9cb6-449b-b4dc-124e9b744c89)
 
-No olvidar todas las indicaciones dadas en la práctica anterior sobre la entrega: enlace github por medio del campus virtual incluyendo cuaderno(s) resolviendo las tareas y su correspondiente *README*.
+![image](https://github.com/user-attachments/assets/1685ee19-d605-4948-bdca-b080e894dac6)
 
-***
-Bajo licencia de Creative Commons Reconocimiento - No Comercial 4.0 Internacional
+![image](https://github.com/user-attachments/assets/2fe504e6-480f-425d-ac2f-57f5d2957251)
+
+
+### Tarea 4
+
+ 
