@@ -6,6 +6,7 @@
 
 ### Tarea 3
 Objetivo
+
 El objetivo de esta tarea fue crear un demostrador que capture imágenes en tiempo real desde la cámara y aplique técnicas de procesamiento de imágenes con OpenCV. Además de mostrar la imagen original, el demostrador debía incluir al menos dos ejemplos prácticos de lo aprendido en las prácticas.
 
 Desarrollo
