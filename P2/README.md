@@ -10,6 +10,7 @@ Objetivo
 El objetivo de esta tarea fue crear un demostrador que capture imágenes en tiempo real desde la cámara y aplique técnicas de procesamiento de imágenes con OpenCV. Además de mostrar la imagen original, el demostrador debía incluir al menos dos ejemplos prácticos de lo aprendido en las prácticas.
 
 Desarrollo
+
 Se utilizaron las siguientes técnicas:
 
 Filtro Sobel: El operador Sobel se aplicó para detectar bordes en las direcciones horizontal y vertical, combinando ambos resultados para mostrar los bordes presentes en la imagen.
@@ -19,6 +20,7 @@ Filtro Canny: Se utilizó el algoritmo de Canny para detectar bordes de manera m
 Conteo de píxeles blancos por filas y columnas: En la imagen resultante del filtro Canny, se contó el número de píxeles blancos por filas y columnas. Se destacó visualmente las filas y columnas con una cantidad de píxeles mayor o igual al 95% del máximo.
 
 Conclusiones
+
 El demostrador mostró claramente la diferencia entre los filtros Sobel y Canny. Mientras Sobel detecta bordes más suaves en direcciones específicas, Canny es más preciso en la detección de contornos definidos. El análisis de píxeles blancos permitió identificar y resaltar las regiones con mayor cantidad de bordes en la imagen, facilitando la detección de áreas importantes.
 
 ![image](https://github.com/user-attachments/assets/912243d6-6052-4bad-86e9-927e11c77870)
