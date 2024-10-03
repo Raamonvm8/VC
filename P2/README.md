@@ -25,6 +25,9 @@ Con esta imagen, se cuenta el número de píxeles no nulos por filas y columnas 
 
 Finalmente, se remarca visualmente esta información mediante gráficos que muestran tanto los píxeles no nulos por filas y columnas como las imágenes de Sobel y Canny, permitiendo una comparación directa de los resultados de ambos enfoques.
 
+<img width="983" alt="0 2024-10-03 a las 12 20 32" src="https://github.com/user-attachments/assets/eb16e224-7ab7-4fd0-bc01-664acf74c2ed">
+<img width="792" alt="0 2024-10-03 a las 12 25 48" src="https://github.com/user-attachments/assets/c1dbc0ed-3b0e-446f-8843-56fc53ec5b32">
+
 
 ### Tarea 3
 Objetivo
