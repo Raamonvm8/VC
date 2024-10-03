@@ -10,6 +10,7 @@ Se utiliza el algoritmo Canny para detectar bordes en la imagen y se cuenta el n
 A continuación, se calcula el número máximo de píxeles blancos tanto por filas como por columnas, y se define un umbral del 95% del valor máximo para identificar cuántas filas y columnas tienen un número de píxeles blancos superior o igual a ese umbral. 
 
 Finalmente, los resultados se visualizan mostrando un gráfico que refleja la cantidad de píxeles blancos por fila, junto con la imagen de salida de Canny, y se imprimen los valores máximos y las filas y columnas que cumplen con el umbral.
+
 <img width="360" alt="0 2024-10-03 a las 12 26 43" src="https://github.com/user-attachments/assets/a02676c3-9a3a-4e0c-87f5-a210f78a4a6a">
 
 
