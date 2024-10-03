@@ -82,5 +82,5 @@ Desarrollo:
 Conclusiones: 
 Este demostrador interactivo utiliza técnicas de detección de movimiento basadas en la diferencia de fotogramas y visualización gráfica para generar efectos en tiempo real. Se ha logrado aplicar lo aprendido en la detección de bordes y contornos para crear una experiencia visual que responde al movimiento, reimaginando los conceptos vistos en los vídeos. Esto permite a los usuarios interactuar con el sistema de forma creativa, mostrando cómo el procesamiento de imágenes en tiempo real puede tener aplicaciones artísticas.
 
-![image](https://github.com/user-attachments/assets/18d37b84-d6f2-4e72-b5ad-8ce5efba10b8)
+![alt text](<0 2024-10-03 a las 13.47.18.png>)
 
