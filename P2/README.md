@@ -31,12 +31,10 @@ Finalmente, se remarca visualmente esta información mediante gráficos que mues
 
 
 ### Tarea 3
-Objetivo
-
+Objetivo: 
 El objetivo de esta tarea fue crear un demostrador que capture imágenes en tiempo real desde la cámara y aplique técnicas de procesamiento de imágenes con OpenCV. Además de mostrar la imagen original, el demostrador debía incluir al menos dos ejemplos prácticos de lo aprendido en las prácticas.
 
-Desarrollo
-
+Desarrollo: 
 Se utilizaron las siguientes técnicas:
 
 Filtro Sobel: El operador Sobel se aplicó para detectar bordes en las direcciones horizontal y vertical, combinando ambos resultados para mostrar los bordes presentes en la imagen.
@@ -45,8 +43,7 @@ Filtro Canny: Se utilizó el algoritmo de Canny para detectar bordes de manera m
 
 Conteo de píxeles blancos por filas y columnas: En la imagen resultante del filtro Canny, se contó el número de píxeles blancos por filas y columnas. Se destacó visualmente las filas y columnas con una cantidad de píxeles mayor o igual al 95% del máximo.
 
-Conclusiones
-
+Conclusiones: 
 El demostrador mostró claramente la diferencia entre los filtros Sobel y Canny. Mientras Sobel detecta bordes más suaves en direcciones específicas, Canny es más preciso en la detección de contornos definidos. El análisis de píxeles blancos permitió identificar y resaltar las regiones con mayor cantidad de bordes en la imagen, facilitando la detección de áreas importantes.
 
 ![image](https://github.com/user-attachments/assets/912243d6-6052-4bad-86e9-927e11c77870)
@@ -60,4 +57,30 @@ El demostrador mostró claramente la diferencia entre los filtros Sobel y Canny.
 
 ### Tarea 4
 
- 
+Objetivo: 
+El objetivo de esta tarea es desarrollar un demostrador interactivo inspirado en las instalaciones visuales de los vídeos “**My Little Piece of Privacy**” y “**Virtual Air Guitar**”. Utilizando herramientas de procesamiento de imágenes en OpenCV, debemos capturar el movimiento del usuario frente a la cámara y generar efectos gráficos visuales en tiempo real basados en dicho movimiento. Esto permite interpretar de forma creativa los cambios en la imagen y exhibir lo aprendido sobre detección de movimiento y procesamiento visual.
+
+Desarrollo:
+
+1. **Captura de video**: 
+   Se inicia capturando la imagen de la webcam utilizando `cv2.VideoCapture(0)`. Cada frame se procesa en tiempo real, convirtiéndose a escala de grises y aplicando un filtro Gaussiano para suavizar la imagen y reducir el ruido.
+
+2. **Detección de movimiento**: 
+   El movimiento se detecta comparando el frame actual con el anterior mediante la función `cv2.absdiff`. A partir de esta diferencia, se aplica un umbral que destaca las áreas donde hay cambios significativos. Luego, se buscan los contornos de estas zonas de movimiento para proceder a la creación de efectos visuales.
+
+3. **Generación de efectos gráficos**: 
+   Para representar el movimiento, se dibujan:
+   - **Círculos** que siguen el área de movimiento, cuyo tamaño depende del área de los contornos detectados.
+   - **Líneas diagonales** que atraviesan las zonas activas para indicar la dirección del movimiento.
+
+4. **Superposición en la imagen original**: 
+   Los efectos gráficos generados se dibujan sobre un lienzo negro y luego se superponen a la imagen original de la cámara con la función `cv2.addWeighted`, lo que permite mostrar tanto la imagen en vivo como los efectos generados en tiempo real.
+
+5. **Interacción en tiempo real**: 
+   El programa se ejecuta continuamente, procesando cada frame hasta que el usuario presione "ESC", momento en el cual se detiene la captura de video y se cierran las ventanas.
+
+Conclusiones: 
+Este demostrador interactivo utiliza técnicas de detección de movimiento basadas en la diferencia de fotogramas y visualización gráfica para generar efectos en tiempo real. Se ha logrado aplicar lo aprendido en la detección de bordes y contornos para crear una experiencia visual que responde al movimiento, reimaginando los conceptos vistos en los vídeos. Esto permite a los usuarios interactuar con el sistema de forma creativa, mostrando cómo el procesamiento de imágenes en tiempo real puede tener aplicaciones artísticas.
+
+![image](https://github.com/user-attachments/assets/18d37b84-d6f2-4e72-b5ad-8ce5efba10b8)
+
