@@ -10,7 +10,7 @@ Se utiliza el algoritmo Canny para detectar bordes en la imagen y se cuenta el n
 A continuación, se calcula el número máximo de píxeles blancos tanto por filas como por columnas, y se define un umbral del 95% del valor máximo para identificar cuántas filas y columnas tienen un número de píxeles blancos superior o igual a ese umbral. 
 
 Finalmente, los resultados se visualizan mostrando un gráfico que refleja la cantidad de píxeles blancos por fila, junto con la imagen de salida de Canny, y se imprimen los valores máximos y las filas y columnas que cumplen con el umbral.
-<img width="460" alt="0 2024-10-03 a las 12 26 43" src="https://github.com/user-attachments/assets/a02676c3-9a3a-4e0c-87f5-a210f78a4a6a">
+<img width="360" alt="0 2024-10-03 a las 12 26 43" src="https://github.com/user-attachments/assets/a02676c3-9a3a-4e0c-87f5-a210f78a4a6a">
 
 
 ### Tarea 2
@@ -26,8 +26,8 @@ Con esta imagen, se cuenta el número de píxeles no nulos por filas y columnas 
 
 Finalmente, se remarca visualmente esta información mediante gráficos que muestran tanto los píxeles no nulos por filas y columnas como las imágenes de Sobel y Canny, permitiendo una comparación directa de los resultados de ambos enfoques.
 
-<img width="983" alt="0 2024-10-03 a las 12 20 32" src="https://github.com/user-attachments/assets/eb16e224-7ab7-4fd0-bc01-664acf74c2ed">
-<img width="792" alt="0 2024-10-03 a las 12 25 48" src="https://github.com/user-attachments/assets/c1dbc0ed-3b0e-446f-8843-56fc53ec5b32">
+<img width="783" alt="0 2024-10-03 a las 12 20 32" src="https://github.com/user-attachments/assets/eb16e224-7ab7-4fd0-bc01-664acf74c2ed">
+<img width="592" alt="0 2024-10-03 a las 12 25 48" src="https://github.com/user-attachments/assets/c1dbc0ed-3b0e-446f-8843-56fc53ec5b32">
 
 
 ### Tarea 3
