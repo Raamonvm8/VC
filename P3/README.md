@@ -28,29 +28,45 @@ Finalmente, se evaluó el rendimiento del modelo utilizando métricas como preci
 
 
 Informe de Clasificación:
+
 Clase: alquitran
+
   Precisión: 1.00
+  
   Recall: 0.82
+  
   F1-Score: 0.90
 
 Clase: fragmentos
+  
   Precisión: 0.80
+  
   Recall: 1.00
+  
   F1-Score: 0.89
 
 Clase: pellets
+  
   Precisión: 1.00
+  
   Recall: 0.87
+  
   F1-Score: 0.93
 
 Clase: macro avg
+  
   Precisión: 0.93
+  
   Recall: 0.90
+  
   F1-Score: 0.91
 
 Clase: weighted avg
+  
   Precisión: 0.92
+  
   Recall: 0.90
+  
   F1-Score: 0.91
 
 
