@@ -6,20 +6,7 @@
 
 
 
-### Tarea 2:Las tres imágenes cargadas en la celda inicial, han sido extraidas de las imágenes de mayor tamaño presentes en la carpeta. La tarea consiste en extraer características (geométricas y/o visuales) e identificar patrones que permitan distinguir las partículas de cada una de las tres clases, evaluando los aciertos y fallos con las imágenes completas considerando las métricas mostradas y la matriz de confusión. La matriz de confusión, muestra para cada clase el número de muestras que se clasifican correctamente de dicha clase, y el número de muestras que se clasifican incorrectamente por cada una de las otras dos clases.
-
-En el trabajo [SMACC: A System for Microplastics Automatic Counting and Classification](https://doi.org/10.1109/ACCESS.2020.2970498), las características geométricas utilizadas fueron:
-
-- Área en píxeles
-- Perímetro en píxeles
-- Compacidad (relación entre el cuadrado del perímetro y el área de la partícula)
-- Relación del área de la partícula con la del contenedor
-- Relación del ancho y el alto del contenedor
-- Relación entre los ejes de la elipse ajustada
-- Definido el centroide, relación entre las distancias menor y mayor al contorno
-
-Si no se quedan satisfechos con la segmentación obtenida, es el mundo real, también en el README comento técnicas recientes de segmentación, que podrían despertar su curiosidad.
-
+### Tarea 2: Clasificación de particulas
 
 **Introducción**
 
@@ -36,6 +23,38 @@ Para mejorar la robustez del modelo, se implementó un aumento de datos que cons
 Tras el preprocesamiento y la extracción de características, los datos se organizaron en un DataFrame para su análisis. Se dividieron en conjuntos de entrenamiento y prueba, utilizando una proporción del 70% para el entrenamiento y el 30% para la evaluación del modelo. A continuación, se utilizó un clasificador Random Forest, que se entrenó con los datos de entrenamiento para aprender a distinguir entre las diferentes clases de partículas.
 
 Finalmente, se evaluó el rendimiento del modelo utilizando métricas como precisión, recall y F1-score, junto con la matriz de confusión, lo que permitió identificar el desempeño del clasificador en cada clase. Los resultados mostraron que el modelo tenía un buen rendimiento, con altas precisiones y recalls en general, aunque con algunas variaciones entre las clases.
+
+![image](https://github.com/user-attachments/assets/c04a667c-a450-423e-b81a-d2b32c76c70f)
+
+
+Informe de Clasificación:
+Clase: alquitran
+  Precisión: 1.00
+  Recall: 0.82
+  F1-Score: 0.90
+
+Clase: fragmentos
+  Precisión: 0.80
+  Recall: 1.00
+  F1-Score: 0.89
+
+Clase: pellets
+  Precisión: 1.00
+  Recall: 0.87
+  F1-Score: 0.93
+
+Clase: macro avg
+  Precisión: 0.93
+  Recall: 0.90
+  F1-Score: 0.91
+
+Clase: weighted avg
+  Precisión: 0.92
+  Recall: 0.90
+  F1-Score: 0.91
+
+
+
 
 **Conclusión**
 
