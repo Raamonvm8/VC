@@ -32,9 +32,7 @@ Informe de Clasificación:
 Clase: alquitran
 
   Precisión: 1.00
-  
   Recall: 0.82
-  
   F1-Score: 0.90
 
 Clase: fragmentos
