@@ -24,52 +24,18 @@ Tras el preprocesamiento y la extracción de características, los datos se orga
 
 Finalmente, se evaluó el rendimiento del modelo utilizando métricas como precisión, recall y F1-score, junto con la matriz de confusión, lo que permitió identificar el desempeño del clasificador en cada clase. Los resultados mostraron que el modelo tenía un buen rendimiento, con altas precisiones y recalls en general, aunque con algunas variaciones entre las clases.
 
-![image](https://github.com/user-attachments/assets/c04a667c-a450-423e-b81a-d2b32c76c70f)
-
-
-Informe de Clasificación:
-
-Clase: alquitran
-
-  Precisión: 1.00
-  Recall: 0.82
-  F1-Score: 0.90
-
-Clase: fragmentos
-  
-  Precisión: 0.80
-  
-  Recall: 1.00
-  
-  F1-Score: 0.89
-
-Clase: pellets
-  
-  Precisión: 1.00
-  
-  Recall: 0.87
-  
-  F1-Score: 0.93
-
-Clase: macro avg
-  
-  Precisión: 0.93
-  
-  Recall: 0.90
-  
-  F1-Score: 0.91
-
-Clase: weighted avg
-  
-  Precisión: 0.92
-  
-  Recall: 0.90
-  
-  F1-Score: 0.91
-
-
-
-
 **Conclusión**
 
 En resumen, el sistema desarrollado ha demostrado ser efectivo para la clasificación de partículas en imágenes. La combinación de técnicas de procesamiento de imágenes, extracción de características y aprendizaje automático ha permitido lograr resultados satisfactorios. Las métricas de evaluación indican que el modelo puede identificar con precisión las partículas, aunque se pueden realizar mejoras en la clasificación de algunas clases. 
+
+![image](https://github.com/user-attachments/assets/c04a667c-a450-423e-b81a-d2b32c76c70f)
+
+![image](https://github.com/user-attachments/assets/0a24a023-b6a0-4263-ae41-f3753151a44a)
+
+
+
+
+
+
+
+
