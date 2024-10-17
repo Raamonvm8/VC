@@ -4,7 +4,7 @@ Noah Ramos González
 
 ## TAREAS:
 
-### Tarea 1: 
+### Tarea 1: Selección de moneda
 
 Tarea 1:
 Empezamos cargando la imagen con ruido, seguida de la conversión a escala de grises. Posteriormente, se aplican un método de umbralizado, Otsu, ya que nos daban complicaciones al detectar contornos en la foto. Luego, se suaviza la imagen mediante un filtro Gaussiano para reducir el ruido, y se extraen los contornos utilizando el método cv2.findContours. Los contornos externos los dibujamos basándonos en su área y redondez, y los contornos redondos se almacenan. 
