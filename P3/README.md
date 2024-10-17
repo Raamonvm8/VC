@@ -1,8 +1,8 @@
-Nombres grupo 12:
+# Nombres grupo 12:
 Ramón Valls Martin
 Noah Ramos González
 
-TAREAS:
+## TAREAS:
 
 ### Tarea 1: 
 
