@@ -6,10 +6,20 @@
 
 
 
-### Tarea 2: 
+### Tarea 2:Las tres imágenes cargadas en la celda inicial, han sido extraidas de las imágenes de mayor tamaño presentes en la carpeta. La tarea consiste en extraer características (geométricas y/o visuales) e identificar patrones que permitan distinguir las partículas de cada una de las tres clases, evaluando los aciertos y fallos con las imágenes completas considerando las métricas mostradas y la matriz de confusión. La matriz de confusión, muestra para cada clase el número de muestras que se clasifican correctamente de dicha clase, y el número de muestras que se clasifican incorrectamente por cada una de las otras dos clases.
 
+En el trabajo [SMACC: A System for Microplastics Automatic Counting and Classification](https://doi.org/10.1109/ACCESS.2020.2970498), las características geométricas utilizadas fueron:
 
-### Memoria del Proyecto
+- Área en píxeles
+- Perímetro en píxeles
+- Compacidad (relación entre el cuadrado del perímetro y el área de la partícula)
+- Relación del área de la partícula con la del contenedor
+- Relación del ancho y el alto del contenedor
+- Relación entre los ejes de la elipse ajustada
+- Definido el centroide, relación entre las distancias menor y mayor al contorno
+
+Si no se quedan satisfechos con la segmentación obtenida, es el mundo real, también en el README comento técnicas recientes de segmentación, que podrían despertar su curiosidad.
+
 
 **Introducción**
 
