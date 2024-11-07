@@ -8,16 +8,9 @@ Para la realización de la práctica hemos hecho uso de las librerías necesaria
 
 Lo que hacemos en esta práctica es realizar un análisis automatizado del video del campus para detectar y seguir personas, coches y matrículas utilizando modelos YOLO y EasyOCR. Configurado para aprovechar CUDA cuando está disponible, el sistema captura cuadros de video en tiempo real, identifica personas y coches en el marco. Además, para cada coche detectado, aplica una segunda detección de matrícula y extrae el texto mediante OCR, guardando la información en un archivo CSV junto con las coordenadas, confianza y texto de la matrícula reconocida. Finalmente, se genera un video anotado con todas las detecciones y un resumen de los objetos detectados, que facilita la visualización y revisión de los resultados.
 
-1. Modelo yolo11n.pt en fotos:
+Enlace dataset: https://universe.roboflow.com/projectyolo-qvrgr/license_plate_segmentation/dataset/1
 
-Implementamos un sistema de detección de objetos para identificar coches y matrículas en una imagen utilizando modelos YOLO y la biblioteca EasyOCR para reconocer texto en las matrículas detectadas. Se cargan dos modelos YOLO, uno general para detectar personas y coches y otro específico para detectar matrículas en los coches detectados, y la imagen de prueba se lee y se carga en memoria. 
-El modelo general detecta objetos en la imagen y se filtran las detecciones para quedarse solo con los coches, luego se anotan los coches detectados con etiquetas visuales y se almacena una imagen recortada de cada detección de coche. Sobre la imagen recortada del coche detectado, se aplica el modelo específico para identificar la región de la matrícula, transformando los límites de la caja de detección de la matrícula de nuevo a las coordenadas de la imagen original para hacer anotaciones y etiquetado directo en esta última. 
-
-Luego convertimos la imagen de la matrícula a escala de grises para mejorar la precisión de OCR y EasyOCR que  detecta y extrae el texto en la región de la matrícula, mostrando "Matrícula" si se identifica correctamente o un mensaje de error en caso contrario. Finalmente, se muestra la imagen con las anotaciones en consola para verificar los resultados visuales, incluyendo las etiquetas de identificación de coche y matrícula detectada.
-
-![alt text](image.png)
-
-2. Modelo entrenado yoloMatric.pt para detección de matriculas en vídeo:
+1. Modelo entrenado yoloMatric.pt para detección de matriculas en vídeo:
 
 Seguidamente implementamos un sistema para detectar y reconocer matrículas en un video usando modelos YOLO y EasyOCR. Primero, se importan las bibliotecas necesarias. Se cargan dos modelos YOLO: yolo11n.pt para detectar personas y coches y yoloMatric.pt, más específico para detectar matrículas, además de inicializar el lector de OCR. A continuación, se configura la captura del video de entrada y el video de salida. 
 
@@ -31,4 +24,11 @@ Se crea un archivo CSV para registrar todas las detecciones, donde se almacena l
 Por último, si se detecta una matrícula, se aplica OCR para leer el texto y se almacena en el CSV junto con las coordenadas de la matrícula. Se dibujan las cajas delimitadoras y se añade el texto en la imagen original, que se guarda en el video de salida. Al final, se imprime un resumen del total de detecciones y se liberan los recursos utilizados.
 
 
+2. Modelo yolo11n.pt en fotos:
 
+Implementamos un sistema de detección de objetos para identificar coches y matrículas en una imagen utilizando modelos YOLO y la biblioteca EasyOCR para reconocer texto en las matrículas detectadas. Se cargan dos modelos YOLO, uno general para detectar personas y coches y otro específico para detectar matrículas en los coches detectados, y la imagen de prueba se lee y se carga en memoria. 
+El modelo general detecta objetos en la imagen y se filtran las detecciones para quedarse solo con los coches, luego se anotan los coches detectados con etiquetas visuales y se almacena una imagen recortada de cada detección de coche. Sobre la imagen recortada del coche detectado, se aplica el modelo específico para identificar la región de la matrícula, transformando los límites de la caja de detección de la matrícula de nuevo a las coordenadas de la imagen original para hacer anotaciones y etiquetado directo en esta última. 
+
+Luego convertimos la imagen de la matrícula a escala de grises para mejorar la precisión de OCR y EasyOCR que  detecta y extrae el texto en la región de la matrícula, mostrando "Matrícula" si se identifica correctamente o un mensaje de error en caso contrario. Finalmente, se muestra la imagen con las anotaciones en consola para verificar los resultados visuales, incluyendo las etiquetas de identificación de coche y matrícula detectada.
+
+![alt text](image.png)
