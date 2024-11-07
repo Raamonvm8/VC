@@ -1,7 +1,0 @@
-path: /Users/ramonvm/Desktop/VC/P4_opcion3/YOLODataset  # Ruta base
-train: /Users/ramonvm/Desktop/VC/P4_opcion3/YOLODataset/train  # Ruta completa para el conjunto de entrenamiento
-val: /Users/ramonvm/Desktop/VC/P4_opcion3/YOLODataset/val  # Ruta completa para el conjunto de validación
-test: /Users/ramonvm/Desktop/VC/P4_opcion3/YOLODataset/test  # Ruta completa para el conjunto de prueba
-
-names:
-    0: Matricula  # Nombre de la clase
